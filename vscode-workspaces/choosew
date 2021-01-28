@@ -1,0 +1,5 @@
+#! /bin/bash
+
+w=$(cat replaceme | dmenu -l 5)
+
+[ ! -z $w ] &&  code "$w" 

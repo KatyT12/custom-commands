@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [ "$#" -ne 1 ];
+then
+	echo "Illegal number of args"
+	exit
+fi
+
+
+name="$1"
+
+sed -i /$name/d replaceme
